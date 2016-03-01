@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+/* ------ Elements ------ */
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: #000;
+}
+
+h1 {
+  background-color:  #00ff00;
+  font-family: 'VT323', sans-serif;
+  font-size: 4em;
+  color: #000;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: #00ff00;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #00ff00;
+}
+
+
+/* ------ Class ------ */
+
+/* ------ Ids ------ */
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+/* ------ Elements ------ */
+
+footer {
+  text-align: center;
+  color: lightgrey;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Source Code Pro', sans-serif;
+    
+}
+/* ------ Class ------ */
+.container {
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+.banner {
+  text-align: center;
+  border-bottom: 6px solid #00ff00;
+  padding-bottom: 15px;
+}
+/* ------ Ids ------ */
+
+
+
+/* ================================= 
+  Base Form Styles
+==================================== */
+/* ------ Elements ------ */
+form {
+  margin-top: 5px;
+}
+
+fieldset {
+  margin: 15px 0 0 10px;
+  border: none;
+}
+
+legend {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'VT323', sans-serif;
+  font-size: 2em;
+  color: #00ff00;
+}
+
+label {
+  color: #fff;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+input::-webkit-input-placeholder {
+	color: darkgrey;
+	font-style: italic;
+  text-align: right;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+input::-moz-placeholder {
+	color: darkgrey;
+	font-style: italic;
+  text-align: right;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: darkgrey;
+	font-style: italic;
+  text-align: right;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+input:-ms-input-placeholder { 
+	color: darkgrey;
+	font-style: italic;
+  text-align: right;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+button:focus {
+  outline: none;
+  border: 2px solid #00ff00;
+  box-shadow: 3px 3px 2px #00ff00;
+  
+  /*****Transition*****/
+  background-color: #66ff66;
+  transition: background-color 500ms linear;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin: 10px auto 30px auto;
+  background-color: #e6ffe6;
+  padding: 15px 5px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+label {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label[for*="other-topics"] {
+  display: block;
+  margin-top: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.fs2 p {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #00ff00;
+  font-family: 'VT323', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* ------ Class ------ */
+.nl {
+  margin-top: 20px;
+}
+/* ------ Ids ------ */
+
+/* ================================= 
+ Form Validation Styles / Extra Credit
+==================================== */
+input:invalid {
+  outline: none;
+  border: 2px solid yellow;
+  box-shadow: 1px 1px 2px yellow;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media(min-width: 769px) {
+  .container {
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+  footer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+}
