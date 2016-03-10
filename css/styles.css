@@ -24,6 +24,12 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: #00ff00;
+  font-family: 'VT323', sans-serif;
+  font-size: 2.5em;
+}
+
 p {
   margin: 0;
   color: #00ff00;
@@ -100,30 +106,34 @@ label {
 }
 
 input::-webkit-input-placeholder {
-	color: darkgrey;
-	font-style: italic;
+  color: darkgrey;
+  font-style: italic;
   text-align: right;
+  padding-right: 15px;
   font-family: 'Source Code Pro', sans-serif;
 }
 
 input::-moz-placeholder {
-	color: darkgrey;
-	font-style: italic;
+  color: darkgrey;
+  font-style: italic;
   text-align: right;
+  padding-right: 15px;
   font-family: 'Source Code Pro', sans-serif;
 }
 
 input:-moz-placeholder {   /* Older versions of Firefox */
-	color: darkgrey;
-	font-style: italic;
+  color: darkgrey;
+  font-style: italic;
   text-align: right;
+  padding-right: 15px;
   font-family: 'Source Code Pro', sans-serif;
 }
 
 input:-ms-input-placeholder { 
-	color: darkgrey;
-	font-style: italic;
+  color: darkgrey;
+  font-style: italic;
   text-align: right;
+  padding-right: 15px;
   font-family: 'Source Code Pro', sans-serif;
 }
 
@@ -222,9 +232,22 @@ input:invalid {
   margin-right: auto;
   margin-left: auto;
  }
-
+  
+  .fs1 label {
+    display: inline;
+    width: 25%;
+    float: left;
+    padding-top: 25px;
+  }
+  
+  .fs1 input,
+  .fs1 select {
+    display: inline;
+    width: 75%;
+}
+  
   footer {
   margin-top: 25px;
   margin-bottom: 25px;
-}
+  }
 }
